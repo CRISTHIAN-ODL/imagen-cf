@@ -13,6 +13,11 @@ jobs:
       packages: write
 
     steps:
+      - name: Saludar
+        uses: CRISTHIAN-ODL/hello-world-javascript-action@v1.0
+        with:
+          who-to-greet: 'codl'
+          
       - name: Checkout code
         uses: actions/checkout@v4
 
